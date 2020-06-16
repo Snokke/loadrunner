@@ -4,8 +4,8 @@ import PreloaderState from './states/preloader-state';
 class Game extends Phaser.Game {
 
   constructor() {
-    const width = 680;
-    const height = 568;
+    const width = 1088;
+    const height = 832;
 
     super(width, height, Phaser.CANVAS, 'content', null);
     this.state.add('PreloaderState', PreloaderState, false);
