@@ -1,0 +1,356 @@
+{"frames": [
+
+{
+	"filename": "brick.png",
+	"frame": {"x":35,"y":1,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "brick_animations/brick_dig_01.png",
+	"frame": {"x":1,"y":1,"w":32,"h":46},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+	"sourceSize": {"w":32,"h":49}
+},
+{
+	"filename": "brick_animations/brick_dig_02.png",
+	"frame": {"x":1,"y":49,"w":32,"h":41},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":32,"h":41},
+	"sourceSize": {"w":32,"h":49}
+},
+{
+	"filename": "brick_animations/brick_dig_03.png",
+	"frame": {"x":1,"y":92,"w":29,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":11,"w":29,"h":35},
+	"sourceSize": {"w":32,"h":49}
+},
+{
+	"filename": "brick_animations/brick_recovery_01.png",
+	"frame": {"x":35,"y":35,"w":32,"h":29},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":29},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "brick_animations/brick_recovery_02.png",
+	"frame": {"x":69,"y":1,"w":32,"h":29},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":29},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "brick_animations/brick_recovery_03.png",
+	"frame": {"x":69,"y":32,"w":32,"h":29},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":29},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "brick_animations/brick_recovery_04.png",
+	"frame": {"x":1,"y":129,"w":32,"h":29},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":29},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "enemy/enemy_idle.png",
+	"frame": {"x":1,"y":191,"w":26,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":26,"h":32},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "enemy/enemy_ladder_climb_01.png",
+	"frame": {"x":103,"y":1,"w":22,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":22,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_ladder_climb_02.png",
+	"frame": {"x":103,"y":35,"w":22,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":22,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_rope_climb_left_01.png",
+	"frame": {"x":69,"y":63,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_rope_climb_left_02.png",
+	"frame": {"x":35,"y":127,"w":21,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_rope_climb_left_03.png",
+	"frame": {"x":84,"y":97,"w":17,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_rope_climb_right_01.png",
+	"frame": {"x":32,"y":93,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_rope_climb_right_02.png",
+	"frame": {"x":35,"y":161,"w":21,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":21,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_rope_climb_right_03.png",
+	"frame": {"x":84,"y":131,"w":17,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":0,"w":17,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_run_left_01.png",
+	"frame": {"x":55,"y":199,"w":22,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":22,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_run_left_02.png",
+	"frame": {"x":29,"y":195,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_run_left_03.png",
+	"frame": {"x":79,"y":267,"w":18,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":18,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_run_right_01.png",
+	"frame": {"x":55,"y":233,"w":22,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":22,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_run_right_02.png",
+	"frame": {"x":29,"y":229,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "enemy/enemy_run_right_03.png",
+	"frame": {"x":103,"y":171,"w":18,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":18,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "gold.png",
+	"frame": {"x":1,"y":293,"w":26,"h":18},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":11,"w":26,"h":18},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "ground.png",
+	"frame": {"x":35,"y":66,"w":32,"h":18},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":32,"h":18},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "ladder.png",
+	"frame": {"x":1,"y":225,"w":26,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":26,"h":32},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "player/player_idle.png",
+	"frame": {"x":1,"y":259,"w":26,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":26,"h":32},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "player/player_ladder_climb_01.png",
+	"frame": {"x":55,"y":267,"w":22,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":22,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_ladder_climb_02.png",
+	"frame": {"x":103,"y":69,"w":22,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":22,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_rope_climb_left_01.png",
+	"frame": {"x":29,"y":263,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_rope_climb_left_02.png",
+	"frame": {"x":79,"y":199,"w":21,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_rope_climb_left_03.png",
+	"frame": {"x":84,"y":165,"w":17,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_rope_climb_right_01.png",
+	"frame": {"x":58,"y":97,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_rope_climb_right_02.png",
+	"frame": {"x":79,"y":233,"w":21,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":21,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_rope_climb_right_03.png",
+	"frame": {"x":99,"y":273,"w":17,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":0,"w":17,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_run_left_01.png",
+	"frame": {"x":103,"y":103,"w":22,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":22,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_run_left_02.png",
+	"frame": {"x":58,"y":131,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_run_left_03.png",
+	"frame": {"x":102,"y":205,"w":18,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":18,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_run_right_01.png",
+	"frame": {"x":103,"y":137,"w":22,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":22,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_run_right_02.png",
+	"frame": {"x":58,"y":165,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "player/player_run_right_03.png",
+	"frame": {"x":102,"y":239,"w":18,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":18,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "rope.png",
+	"frame": {"x":35,"y":86,"w":32,"h":5},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":5},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "solid_brick.png",
+	"frame": {"x":1,"y":160,"w":32,"h":29},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":29},
+	"sourceSize": {"w":32,"h":32}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "texture_sheets.png",
+	"format": "RGBA8888",
+	"size": {"w":126,"h":312},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ec18e4ced86cc4db232b3d70bddaa9e6:ffb6b019f7e9a84fbddac44d370f4e1b:275f557d751878ab5c73a13d7816a0ec$"
+}
+}
