@@ -1,82 +1,97 @@
 const ANIMATIONS = {
-  playerRunRight: {
+  playerRunRight: 1,
+  playerRunLeft: 2,
+  playerLadderClimb: 3,
+  playerRopeClimbLeft: 4,
+  playerRopeClimbRight: 5,
+  enemyRunRight: 6,
+  enemyRunLeft: 7,
+  enemyLadderClimb: 8,
+  enemyRopeClimbLeft: 9,
+  enemyRopeClimbRight: 10,
+  brickDig: 11,
+  brickRecovery: 12,
+};
+
+const ANIMATIONS_CONFIG = {
+  [ANIMATIONS.playerRunRight]: {
     path: 'player',
     name: 'player_run_right',
     end: 3,
     loop: true,
     frameRate: 15,
   },
-  playerRunLeft: {
+  [ANIMATIONS.playerRunLeft]: {
     path: 'player',
     name: 'player_run_left',
     end: 3,
     loop: true,
     frameRate: 15,
   },
-  playerLadderClimb: {
+  [ANIMATIONS.playerLadderClimb]: {
     path: 'player',
     name: 'player_ladder_climb',
     end: 2,
     loop: true,
     frameRate: 15,
   },
-  playerRopeClimbLeft: {
+  [ANIMATIONS.playerRopeClimbLeft]: {
     path: 'player',
     name: 'player_rope_climb_left',
     end: 3,
     loop: true,
     frameRate: 15,
   },
-  playerRopeClimbRight: {
+  [ANIMATIONS.playerRopeClimbRight]: {
     path: 'player',
     name: 'player_rope_climb_right',
     end: 3,
     loop: true,
     frameRate: 15,
   },
-  enemyRunRight: {
+  [ANIMATIONS.enemyRunRight]: {
     path: 'enemy',
     name: 'enemy_run_right',
     end: 3,
     loop: true,
     frameRate: 15,
   },
-  enemyRunLeft: {
+  [ANIMATIONS.enemyRunLeft]: {
     path: 'enemy',
     name: 'enemy_run_left',
     end: 3,
     loop: true,
     frameRate: 15,
   },
-  enemyLadderClimb: {
+  [ANIMATIONS.enemyLadderClimb]: {
     path: 'enemy',
     name: 'enemy_ladder_climb',
     end: 2,
     loop: true,
     frameRate: 15,
   },
-  enemyRopeClimbLeft: {
+  [ANIMATIONS.enemyRopeClimbLeft]: {
     path: 'enemy',
     name: 'enemy_rope_climb_left',
     end: 3,
     loop: true,
     frameRate: 15,
   },
-  enemyRopeClimbRight: {
+  [ANIMATIONS.enemyRopeClimbRight]: {
     path: 'enemy',
     name: 'enemy_rope_climb_right',
     end: 3,
     loop: true,
     frameRate: 15,
   },
-  brickDig: {
+  [ANIMATIONS.brickDig]: {
     path: 'brick_animations',
     name: 'brick_dig',
     end: 3,
     loop: false,
     frameRate: 15,
   },
-  brickRecovery: {
+  [ANIMATIONS.brickRecovery]: {
     path: 'brick_animations',
     name: 'brick_recovery',
     end: 4,
@@ -85,4 +100,4 @@ const ANIMATIONS = {
   },
 };
 
-export default ANIMATIONS;
+export { ANIMATIONS, ANIMATIONS_CONFIG };

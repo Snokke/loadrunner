@@ -1,12 +1,16 @@
-import BlockCreator from './block-creator/block-creator';
-import { BLOCK_CODE, BLOCK_TYPE } from './block-creator/block-data';
+import BlockCreator from './blocks/block-creator';
+import CharacterCreator from './characters/character-creator';
+import { BLOCK_CODE, BLOCK_TYPE } from './blocks/block-data';
 
 export default class Level extends Phaser.Group {
   constructor(game, parent) {
     super(game, parent);
 
     this._map = null;
+    this._player = null;
+    this._enemies = [];
     this._blockCreator = null;
+    this._characterCreator = null;
 
     this._rows = 23;
     this._columns = 32;
@@ -14,6 +18,14 @@ export default class Level extends Phaser.Group {
     this._blockHeight = 32;
 
     this._init();
+  }
+
+  get player() {
+    return this._player;
+  }
+
+  get enemies() {
+    return this._enemies;
   }
 
   showLevel() {
@@ -41,10 +53,22 @@ export default class Level extends Phaser.Group {
       for (let column = 0; column < this._columns; column += 1) {
         const type = BLOCK_CODE[arrayMap[row][column]];
 
-        if (type === BLOCK_TYPE.blank) {
-          this._map[row][column] = BLOCK_TYPE.blank;
-        } else {
-          this._createBlock(row, column, type);
+        switch (type) {
+          case BLOCK_TYPE.blank:
+            this._map[row][column] = BLOCK_TYPE.blank;
+            break;
+
+          case BLOCK_TYPE.player:
+            this._createPlayer(row, column);
+            break;
+
+          case BLOCK_TYPE.enemy:
+            this._createEnemy(row, column);
+            break;
+
+          default:
+            this._createBlock(row, column, type);
+            break;
         }
       }
     }
@@ -65,6 +89,26 @@ export default class Level extends Phaser.Group {
     block.y = row * this._blockHeight;
 
     this._map[row][column] = block;
+  }
+
+  _createPlayer(row, column) {
+    const player = this._characterCreator.getCharacter(BLOCK_TYPE.player);
+
+    player.x = column * this._blockWidth;
+    player.y = row * this._blockHeight;
+
+    this._player = player;
+    this._map[row][column] = BLOCK_TYPE.blank;
+  }
+
+  _createEnemy(row, column) {
+    const enemy = this._characterCreator.getCharacter(BLOCK_TYPE.enemy);
+
+    enemy.x = column * this._blockWidth;
+    enemy.y = row * this._blockHeight;
+
+    this._enemies.push(enemy);
+    this._map[row][column] = BLOCK_TYPE.blank;
   }
 
   _createGround() {
@@ -88,6 +132,7 @@ export default class Level extends Phaser.Group {
 
   _init() {
     this._blockCreator = new BlockCreator(this.game, this);
+    this._characterCreator = new CharacterCreator(this.game, this);
 
     this._map = new Array(this._rows);
 

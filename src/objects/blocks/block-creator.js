@@ -1,12 +1,12 @@
-import { BLOCK_TYPE, BLOCK_FRAME_NAME } from './block-data';
-import Brick from './blocks/brick';
-import Ladder from './blocks/ladder';
-import Ground from './blocks/ground';
-import WinLadder from './blocks/win-ladder';
-import SolidBrick from './blocks/solid-brick';
-import Gold from './blocks/gold';
-import Trap from './blocks/trap';
-import Rope from './blocks/rope';
+import { BLOCK_TYPE } from './block-data';
+import Brick from './block-types/brick';
+import Ladder from './block-types/ladder';
+import Ground from './block-types/ground';
+import WinLadder from './block-types/win-ladder';
+import SolidBrick from './block-types/solid-brick';
+import Gold from './block-types/gold';
+import Trap from './block-types/trap';
+import Rope from './block-types/rope';
 
 export default class BlockCreator {
   constructor(game, parent) {

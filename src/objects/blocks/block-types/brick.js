@@ -1,5 +1,5 @@
 import AbstractBlock from '../abstract-block';
-import ANIMATIONS from '../../animations';
+import { ANIMATIONS_CONFIG, ANIMATIONS } from '../../animations';
 import createAnimation from '../../create-animation';
 import { BLOCK_FRAME_NAME, BLOCK_TYPE } from '../block-data';
 
@@ -29,8 +29,8 @@ export default class Brick extends AbstractBlock {
   }
 
   _addAnimations() {
-    this._digAnimation = createAnimation(this._view, ANIMATIONS.brickDig);
-    this._recoveryAnimation = createAnimation(this._view, ANIMATIONS.brickRecovery);
+    this._digAnimation = createAnimation(this._view, ANIMATIONS_CONFIG[ANIMATIONS.brickDig]);
+    this._recoveryAnimation = createAnimation(this._view, ANIMATIONS_CONFIG[ANIMATIONS.brickRecovery]);
   }
 }
 

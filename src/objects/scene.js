@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import LEVEL_MAP from './level_maps';
 import createAnimation from './create-animation';
 import ANIMATIONS from './animations';
@@ -39,18 +41,54 @@ export default class Scene extends Phaser.Group {
   _initLevel() {
     const level = new Level(this.game, this);
 
-    const map = LEVEL_MAP['level-002'];
+    const map = LEVEL_MAP['level-001'];
     level.createLevel(map);
     const levelArray = level.getLevelArray();
 
+    const { player, enemies } = level;
 
-    this.game.time.events.add(500, () => {
-      levelArray[2][0].dig();
-    });
+    // player.runLeft();
 
-    this.game.time.events.add(1000, () => {
-      levelArray[2][0].recovery();
-    });
+    // this.game.time.events.add(1000, () => {
+    //   player.stop();
+    // });
+
+    // this.game.time.events.add(1500, () => {
+    //   player.runLeft();
+    // });
+
+    // this.game.time.events.add(2000, () => {
+    //   player.stop();
+    // });
+
+    // this.game.time.events.add(2500, () => {
+    //   player.runRight();
+    // });
+
+    // player.runRight();
+    // player.climbRopeRight();
+    // player.climbRopeLeft();
+    // player.climbLadderUp();
+    // player.climbLadderDown();
+
+    // enemies[0].runLeft();
+    // enemies[0].runRight();
+    // enemies[0].climbRopeRight();
+    // enemies[0].climbRopeLeft();
+    // enemies[0].climbLadderUp();
+    // enemies[0].climbLadderDown();
+
+    // this.game.time.events.add(500, () => {
+    //   levelArray[2][0].dig();
+    // });
+
+    // this.game.time.events.add(500, () => {
+    //   levelArray[2][0].dig();
+    // });
+
+    // this.game.time.events.add(1000, () => {
+    //   levelArray[2][0].recovery();
+    // });
 
     // this._rows = 23;
     // this._columns = 32;
@@ -71,7 +109,7 @@ export default class Scene extends Phaser.Group {
     // }
 
 
-    level.x = 32 + 16;
+    level.x = 32;
     level.y = 32 + 32;
   }
 
