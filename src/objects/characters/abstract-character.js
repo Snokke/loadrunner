@@ -11,7 +11,8 @@ export default class AbstractCharacter extends Phaser.Group {
     this._view = null;
     this._runLeftAnimation = null;
     this._runRightAnimation = null;
-    this._climbLadderAnimation = null;
+    this._climbLadderUpAnimation = null;
+    this._climbLadderDownAnimation = null;
     this._climbRopeLeftAnimation = null;
     this._climbRopeRightAnimation = null;
 
@@ -42,16 +43,16 @@ export default class AbstractCharacter extends Phaser.Group {
 
   climbLadderUp() {
     const state = CHARACTER_STATE.climbLadderUp;
-    const animationType = CHARACTER_ANIMATION_TYPE.climbLadder;
-    this._enableAnimation(state, animationType, this._climbLadderAnimation);
+    const animationType = CHARACTER_ANIMATION_TYPE.climbLadderUp;
+    this._enableAnimation(state, animationType, this._climbLadderUpAnimation);
 
     this.y -= this._moveOffset * this._speed;
   }
 
   climbLadderDown() {
     const state = CHARACTER_STATE.climbLadderDown;
-    const animationType = CHARACTER_ANIMATION_TYPE.climbLadder;
-    this._enableAnimation(state, animationType, this._climbLadderAnimation);
+    const animationType = CHARACTER_ANIMATION_TYPE.climbLadderDown;
+    this._enableAnimation(state, animationType, this._climbLadderDownAnimation);
 
     this.y += this._moveOffset * this._speed;
   }
@@ -85,8 +86,11 @@ export default class AbstractCharacter extends Phaser.Group {
         break;
 
       case CHARACTER_STATE.climbLadderUp:
+        this._climbLadderUpAnimation.paused = true;
+        break;
+
       case CHARACTER_STATE.climbLadderDown:
-        this._climbLadderAnimation.paused = true;
+        this._climbLadderDownAnimation.paused = true;
         break;
 
       case CHARACTER_STATE.climbRopeLeft:
@@ -119,7 +123,8 @@ export default class AbstractCharacter extends Phaser.Group {
   _initAnimations() {
     this._runLeftAnimation = this._getAnimation(CHARACTER_ANIMATION_TYPE.runLeft);
     this._runRightAnimation = this._getAnimation(CHARACTER_ANIMATION_TYPE.runRight);
-    this._climbLadderAnimation = this._getAnimation(CHARACTER_ANIMATION_TYPE.climbLadder);
+    this._climbLadderUpAnimation = this._getAnimation(CHARACTER_ANIMATION_TYPE.climbLadderUp);
+    this._climbLadderDownAnimation = this._getAnimation(CHARACTER_ANIMATION_TYPE.climbLadderDown);
     this._climbRopeLeftAnimation = this._getAnimation(CHARACTER_ANIMATION_TYPE.climbRopeLeft);
     this._climbRopeRightAnimation = this._getAnimation(CHARACTER_ANIMATION_TYPE.climbRopeRight);
   }
@@ -142,7 +147,8 @@ export default class AbstractCharacter extends Phaser.Group {
       return;
     }
 
-    animation.next(1);
+    this.stop();
+    animation.next();
 
     if (this._previousState === state) {
       animation.paused = false; // eslint-disable-line no-param-reassign

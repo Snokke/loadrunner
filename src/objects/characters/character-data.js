@@ -8,9 +8,10 @@ const CHARACTER_TYPE = {
 const CHARACTER_ANIMATION_TYPE = {
   runLeft: 1,
   runRight: 2,
-  climbLadder: 3,
-  climbRopeLeft: 4,
-  climbRopeRight: 5,
+  climbLadderUp: 3,
+  climbLadderDown: 4,
+  climbRopeLeft: 5,
+  climbRopeRight: 6,
 };
 
 const CHARACTER_STATE = {
@@ -44,9 +45,13 @@ const CHARACTER_CONFIG = {
         type: ANIMATIONS.playerRunRight,
         name: ANIMATIONS_CONFIG[ANIMATIONS.playerRunRight].name,
       },
-      [CHARACTER_ANIMATION_TYPE.climbLadder]: {
-        type: ANIMATIONS.playerLadderClimb,
-        name: ANIMATIONS_CONFIG[ANIMATIONS.playerLadderClimb].name,
+      [CHARACTER_ANIMATION_TYPE.climbLadderUp]: {
+        type: ANIMATIONS.playerLadderClimbUp,
+        name: ANIMATIONS_CONFIG[ANIMATIONS.playerLadderClimbUp].name,
+      },
+      [CHARACTER_ANIMATION_TYPE.climbLadderDown]: {
+        type: ANIMATIONS.playerLadderClimbDown,
+        name: ANIMATIONS_CONFIG[ANIMATIONS.playerLadderClimbDown].name,
       },
       [CHARACTER_ANIMATION_TYPE.climbRopeLeft]: {
         type: ANIMATIONS.playerRopeClimbLeft,
@@ -77,9 +82,13 @@ const CHARACTER_CONFIG = {
         type: ANIMATIONS.enemyRunRight,
         name: ANIMATIONS_CONFIG[ANIMATIONS.enemyRunRight].name,
       },
-      [CHARACTER_ANIMATION_TYPE.climbLadder]: {
-        type: ANIMATIONS.enemyLadderClimb,
-        name: ANIMATIONS_CONFIG[ANIMATIONS.enemyLadderClimb].name,
+      [CHARACTER_ANIMATION_TYPE.climbLadderUp]: {
+        type: ANIMATIONS.enemyLadderClimbUp,
+        name: ANIMATIONS_CONFIG[ANIMATIONS.enemyLadderClimbUp].name,
+      },
+      [CHARACTER_ANIMATION_TYPE.climbLadderDown]: {
+        type: ANIMATIONS.enemyLadderClimbDown,
+        name: ANIMATIONS_CONFIG[ANIMATIONS.enemyLadderClimbDown].name,
       },
       [CHARACTER_ANIMATION_TYPE.climbRopeLeft]: {
         type: ANIMATIONS.enemyRopeClimbLeft,

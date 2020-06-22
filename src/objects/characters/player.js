@@ -19,8 +19,13 @@ export default class Player extends AbstractCharacter {
     this._rightKey = this.game.input.keyboard.addKey(Phaser.Keyboard.RIGHT);
   }
 
-  update() {
+  update() { // eslint-disable-line
     super.update();
+
+    if (this._upKey.isDown && this._downKey.isDown) {
+      this.stop();
+      return;
+    }
 
     if (this._upKey.isDown) {
       this.climbLadderUp();
@@ -29,6 +34,11 @@ export default class Player extends AbstractCharacter {
 
     if (this._downKey.isDown) {
       this.climbLadderDown();
+      return;
+    }
+
+    if (this._leftKey.isDown && this._rightKey.isDown) {
+      this.stop();
       return;
     }
 
